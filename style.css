@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  background-color: #fde9ff;
+  background-size: 100%;
+  margin: 0;
+  padding: 10rem;
+  text-decoration: none;
+}

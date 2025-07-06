@@ -1,13 +1,17 @@
 import { useState } from "react";
+import P5Wrapper from "./P5wrapper";
+import InteractiveText from "./InteractiveText";
+import AnimatedName from "./AnimatedName";
+
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+
 
   return (
     <div className="layout">
       <div>
-        <h1>Ditiro Mashigo</h1>
+      <AnimatedName name="Ditiro Mashigo" />
        
       </div>
       <p className="read-the-docs">Website coming soon</p>
@@ -16,6 +20,10 @@ function App() {
     <button>Get in touch</button>
   </a>
 </div>
+<div>
+
+
+    </div>
     </div>
   );
 }

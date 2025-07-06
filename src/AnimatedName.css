@@ -1,0 +1,14 @@
+.animated-name {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.05em;
+    cursor: default;
+  }
+  
+  .letter {
+    display: inline-block;
+  }
+  
+  

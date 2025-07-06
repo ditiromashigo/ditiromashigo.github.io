@@ -1,4 +1,4 @@
-/* App.css */
+
 
 * {
   padding: 0;
@@ -10,7 +10,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: normal;
   letter-spacing: 0.1em;
-  background-color: #fdfbfd;
+  background-color: #eeede9;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -21,7 +21,8 @@ body {
 button {
   font-family: "Inter", sans-serif;
   border-radius: 20px;
-  border: 1px solid transparent;
+  border: 1.5px solid;
+  background-color: gold;
   padding: 0.6em 1.2em;
   cursor: pointer;
   color: black; /* or whatever color you want */
@@ -30,3 +31,50 @@ button {
 }
 
 
+.animated-name {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.05em;
+  cursor: default;
+}
+
+.letter {
+  display: inline-block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.scatter {
+  transform: translate(
+    calc((Math.random() - 0.5) * 40px),
+    calc((Math.random() - 0.5) * 40px)
+  ) rotate(calc((Math.random() - 0.5) * 40deg));
+  opacity: 0.3;
+}
+
+@keyframes divcolor {
+  0% {
+    background-color: #fde9ff;
+  }
+  25% {
+    background-color: #7600ff;
+  }
+  50% {
+    background-color: #49fce3;
+  }
+  75% {
+    background-color: #fcf202;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+button:hover {
+  animation-name: divcolor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}

@@ -7,3 +7,34 @@
   justify-content: center;
 }
 
+
+@font-face {
+  font-family: "Crake";
+  src:
+    url("../fonts/Crake-SemiBold.woff") format("woff"),
+    url("../fonts/Crake-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Remixa";
+  src:
+    url("../fonts/Remixa-Semibold.woff") format("woff"),
+    url("../fonts/Remixa-Semibold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.letter {
+  font-family: "Remixa", sans-serif;
+  font-size: 80px;
+  letter-spacing: 0.4rem;
+}
+
+@media (max-width: 600px) {
+  .letter {
+    font-size: 40px;
+    letter-spacing: 0.2rem;
+  }
+}

@@ -1,0 +1,30 @@
+/* App.css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  background-color: #fdfbfd;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+
+}
+
+

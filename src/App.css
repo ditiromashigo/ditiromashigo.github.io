@@ -1,0 +1,9 @@
+/* This applies gap to your internal layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+

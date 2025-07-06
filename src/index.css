@@ -24,7 +24,9 @@ button {
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   cursor: pointer;
-
+  color: black; /* or whatever color you want */
+  -webkit-appearance: none; /* Remove default iOS styling */
+  -webkit-tap-highlight-color: transparent; /* Prevent highlight */
 }
 
 

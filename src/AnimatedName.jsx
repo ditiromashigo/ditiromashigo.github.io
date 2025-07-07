@@ -1,24 +1,43 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./AnimatedName.css";
 
 const AnimatedName = ({ name }) => {
   const [hovered, setHovered] = useState(false);
   const [transforms, setTransforms] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile screen size on mount
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 600);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const handleHover = () => {
     setHovered(true);
-    // generate random transforms per character
     const newTransforms = name.split("").map(() => {
-      const x = (Math.random() - 0.5) * 100; // px
+      const x = (Math.random() - 0.5) * 100;
       const y = (Math.random() - 0.5) * 100;
-      const r = (Math.random() - 0.5) * 100; // deg
+      const r = (Math.random() - 0.5) * 100;
       return { x, y, r };
     });
     setTransforms(newTransforms);
+
+    // On mobile, auto-reset after a short delay
+    if (isMobile) {
+      setTimeout(() => {
+        setHovered(false);
+      }, 1000); // adjust delay to taste
+    }
   };
 
   const handleLeave = () => {
-    setHovered(false);
+    if (!isMobile) {
+      setHovered(false);
+    }
   };
 
   return (
@@ -26,6 +45,7 @@ const AnimatedName = ({ name }) => {
       className="animated-name"
       onMouseEnter={handleHover}
       onMouseLeave={handleLeave}
+      onTouchStart={handleHover}
     >
       {name.split("").map((char, i) => {
         const transform = transforms[i] || { x: 0, y: 0, r: 0 };
@@ -37,7 +57,6 @@ const AnimatedName = ({ name }) => {
               transform: hovered
                 ? `translate(${transform.x}px, ${transform.y}px) rotate(${transform.r}deg)`
                 : `translate(0, 0) rotate(0)`,
-            //   opacity: hovered ? 0.3 : 1,
               transition: "transform 0.4s ease, opacity 0.4s ease",
               transitionDelay: `${i * 30}ms`,
             }}

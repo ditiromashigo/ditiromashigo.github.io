@@ -38,3 +38,9 @@
     letter-spacing: 0.2rem;
   }
 }
+
+
+.canvas-container {
+  width: 100vw;
+  height: 60vh;
+}

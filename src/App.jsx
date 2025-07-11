@@ -3,13 +3,14 @@ import P5Wrapper from "./P5wrapper";
 import InteractiveText from "./InteractiveText";
 import AnimatedName from "./AnimatedName";
 import BlobScene from "./BlobScene";
-
+import TopMenu from "./TopMenu";
+import BottomMenu from "./BottomMenu";
 import "./App.css";
 
 function App() {
   return (
     <>
-    <div className="layout">
+    {/* <div className="layout">
       <div>
         <AnimatedName name="Ditiro Mashigo" />
       </div>
@@ -21,8 +22,10 @@ function App() {
         </a>
       </div>
       <div></div>
-    </div>
+    </div> */}
+    <TopMenu />
     <BlobScene />
+    <BottomMenu />
     </>
   );
 }

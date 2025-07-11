@@ -10,8 +10,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@react-spring/three": "^10.0.1",
     "@react-three/drei": "^10.4.4",
     "@react-three/fiber": "^9.2.0",
+    "framer-motion": "^12.23.0",
+    "lucide-react": "^0.525.0",
     "p5": "^2.0.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

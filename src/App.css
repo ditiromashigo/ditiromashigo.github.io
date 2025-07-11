@@ -7,7 +7,6 @@
   justify-content: center;
 }
 
-
 @font-face {
   font-family: "Crake";
   src:
@@ -22,25 +21,120 @@
   src:
     url("../fonts/Remixa-Semibold.woff") format("woff"),
     url("../fonts/Remixa-Semibold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
 }
 
 .letter {
   font-family: "Remixa", sans-serif;
-  font-size: 80px;
-  letter-spacing: 0.4rem;
+  font-size: 40px;
+  letter-spacing: 0.2rem;
 }
 
 @media (max-width: 600px) {
   .letter {
-    font-size: 40px;
+    font-size: 20px;
     letter-spacing: 0.2rem;
   }
 }
 
-
 .canvas-container {
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
+}
+
+.drag-hint {
+  position: absolute;
+  bottom: 140px; /* ↑ Push it higher to clear the BottomMenu */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1rem;
+  font-family: sans-serif;
+  background: rgb(121, 6, 237);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  z-index: 50; /* ↑ Higher than your BottomMenu */
+  pointer-events: none;
+  animation: fadeInOut 7s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+.top-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0 2rem;
+  background: transparent;
+  z-index: 100;
+}
+
+.top-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #f4f4f4 65%, transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.top-menu h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Remixa", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: linear-gradient(to top, #f4f4f4 70%, transparent);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 20;
+}
+
+.bottom-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 1.5rem;
+}
+
+
+.close-button:hover {
+  animation-name: divcolor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+@keyframes divcolor {
+  0% {
+    background-color: #fde9ff;
+  }
+  25% {
+    background-color: #7600ff;
+  }
+  50% {
+    background-color: #49fce3;
+  }
+  75% {
+    background-color: #fcf202;
+  }
+  100% {
+    background-color: #ff0000;
+  }
 }

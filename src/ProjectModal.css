@@ -24,7 +24,9 @@
 
 /* The actual modal */
 .modal-content {
+  position: relative;
   background: white;
+   position: relative;
   border-radius: 18px;
   padding: 2rem;
   color: black;
@@ -154,4 +156,19 @@
     max-width: 95%;
 
   }
+}
+
+.modal-close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.modal-close-icon:hover {
+  opacity: 1;
 }

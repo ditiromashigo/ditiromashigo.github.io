@@ -26,7 +26,7 @@ function BlobScene() {
     <>
     <div className="canvas-container">
       <Canvas
-        camera={{ position: [0, 5, 20], fov: 30 }} // Move the camera farther back, higher the number, further away it goes
+        camera={{ position: [0, 5, 20], fov: 30 }} // Move the camera farther back, higher the number, further away it
         gl={{ toneMappingExposure: 2 }}
       >
         <ambientLight intensity={1.5} />

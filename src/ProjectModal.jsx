@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import "./ProjectModal.css";
+import closeIcon from "../images/close.svg";
 
 export default function ProjectModal({ project, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,7 +31,16 @@ export default function ProjectModal({ project, onClose }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <h2 className="project-title"><em>{project.title}</em>, {project.year}</h2>
+      <img
+          src="../images/close.svg"
+          alt="Close modal"
+          className="modal-close-icon"
+          onClick={onClose}
+        />
+
+        <h2 className="project-title">
+          <em>{project.title}</em>, {project.year}
+        </h2>
 
         <div className="carousel-wrapper">
           <button
@@ -72,13 +82,17 @@ export default function ProjectModal({ project, onClose }) {
 
         {project.captions?.[currentIndex] && (
           <div className="image-caption">
-            <p><strong>Image:</strong> {project.captions[currentIndex]}</p>
+            <p>
+              <strong>Image:</strong> {project.captions[currentIndex]}
+            </p>
           </div>
         )}
 
         <p className="project-description">{project.description}</p>
 
-        <button className="close-button" onClick={onClose}>back home</button>
+        <button className="close-button" onClick={onClose}>
+          back home
+        </button>
       </div>
     </div>
   );

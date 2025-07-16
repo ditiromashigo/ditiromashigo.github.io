@@ -7,8 +7,8 @@ import Blob from "./Blob";
 import ProjectModal from "./ProjectModal";
 import dragIcon from "../images/underhand.svg";
 
-function BlobScene() {
-  const [selected, setSelected] = useState(null);
+function BlobScene({ activeProject, setActiveProject }) {
+  // const [selected, setSelected] = useState(null);
   const [showHint, setShowHint] = useState(true);
 
   useEffect(() => {
@@ -38,15 +38,15 @@ function BlobScene() {
               key={project.id}
               position={[Math.sin(i) * 3, Math.cos(i * 1.5) * 2, (i - 1) * 2]}
               texture={textures[i]}
-              onClick={() => setSelected(project)}
+              onClick={() => setActiveProject(project)}
             />
           ))}
         </Canvas>
         {showHint && <div className="drag-hint">👆 Drag to explore</div>}
       </div>
 
-      {selected && (
-        <ProjectModal project={selected} onClose={() => setSelected(null)} />
+      {activeProject && (
+        <ProjectModal project={activeProject} onClose={() => setActiveProject(null)} />
       )}
     </>
   );

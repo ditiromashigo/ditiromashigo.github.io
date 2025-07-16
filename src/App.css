@@ -36,6 +36,58 @@
   }
 }
 
+.animated-name {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.animated-name .letter {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.animated-name .middle-letters {
+  display: inline-block;
+  opacity: 1;
+  font-size: 2.2rem;         /* Ensures same font size */
+  line-height: 1.67;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  vertical-align: bottom;     /* Aligns with baseline of D and M */
+  transform: translateY(0.1rem); /* Nudge slightly down for visual balance */
+  letter-spacing: 0.2ch;
+
+}
+
+.animated-name .disappear {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.animated-name .appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-name .contracted:first-child {
+  transform: translateX(6rem);
+}
+
+.animated-name .contracted:last-child {
+  transform: translateX(-1rem);
+}
+
+.animated-name .expanded:first-child,
+.animated-name .expanded:last-child {
+  transform: translateX(0);
+}
+
+
 .canvas-container {
   width: 100vw;
   height: 100vh;

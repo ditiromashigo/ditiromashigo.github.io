@@ -50,7 +50,7 @@ export default function Blob({ position, texture, onClick }) {
       <sphereGeometry args={[1.1, 64, 64]} />
       <MeshDistortMaterial
         map={texture}
-        distort={hovered ? 0.5 : 0}
+        distort={hovered ? 0.3 : 0}
         speed={2}
         radius={1}
         roughness={0.2}

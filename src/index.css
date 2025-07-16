@@ -5,8 +5,12 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  font-weight: normal;
+  /* font-family: "Kumbh Sans", sans-serif; */
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   background-color: #f4f4f4;
   height: 100vh;
   display: flex;
@@ -21,7 +25,7 @@ h2 {
 }
 
 button {
-  font-family: "Inter", sans-serif;
+  font-family: "Figtree", sans-serif;
   border-radius: 20px;
   border: none;
   background-color: transparent;

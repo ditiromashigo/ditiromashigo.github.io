@@ -41,6 +41,10 @@
   height: 100vh;
 }
 
+.drag-icon {
+  height: 2rem;
+}
+
 .drag-hint {
   position: absolute;
   bottom: 140px; /* ↑ Push it higher to clear the BottomMenu */
@@ -48,13 +52,12 @@
   transform: translateX(-50%);
   color: #fff;
   font-size: 1rem;
-  font-family: sans-serif;
   background: rgb(121, 6, 237);
   padding: 0.5rem 1rem;
-  border-radius: 12px;
+  border-radius: 20px;
   z-index: 50; /* ↑ Higher than your BottomMenu */
   pointer-events: none;
-  animation: fadeInOut 7s ease-in-out forwards;
+  animation: fadeInOut 15s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
@@ -112,6 +115,14 @@
   font-size: 1.5rem;
 }
 
+.close-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.5rem;
+  width: 9rem;
+}
 
 .close-button:hover {
   animation-name: divcolor;
@@ -141,21 +152,20 @@
 
 .modal-close-icon {
   position: absolute;
-  top: 1rem;
+  top: 0rem;
   right: 1rem;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   transition: opacity 0.2s ease;
   z-index: 10;
 }
 
 .modal-close-icon:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .menu-button {
   padding: 0.6em 1.2em;
   cursor: pointer;
-  opacity: 1;
 }

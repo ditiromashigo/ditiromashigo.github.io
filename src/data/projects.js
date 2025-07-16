@@ -26,7 +26,7 @@ const projects = [
     id: 3,
     title: " IZulu iKaya lami",
     image: "/images/izulu.jpg",
-    images: ["/images/boemo-ba-leratadima.jpg", "/images/mesong.jpg", "/images/lutombo-blue.jpg", ],
+    images: ["/images/lutombo-blue.jpg", "/images/boemo-ba-leratadima.jpg", "/images/mesong.jpg",  ],
     captions: ["First image caption", "Second caption", "Third caption"],
     description:
       "IZulu iKaya lami | The heavens are my home — a Zulu chorus — embodies the essence of this body of work. Created from a place of counter-seeing and feeling, it challenges the conventional notion of the sky as merely blue and home as a place outside the body.'This exploration stems from childhood memory, where I was enchanted by fairy tales of dames, damsels, and dragons and where I first experienced the feeling of being displaced, after relocating from Lebowakgomo to Pretoria. I recall needing to feel at home in a land foreign to me, the memory of finding solace in these stories sparked an understanding of how imagination shapes our world, leading me to retell them from an African perspective. I realign these tales with my version of beauty, my understanding of the divine, and the sources of my inspiration which are usually formless but are rather textured in language and color.",

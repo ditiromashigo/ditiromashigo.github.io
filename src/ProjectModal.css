@@ -26,7 +26,7 @@
 .modal-content {
   position: relative;
   background: white;
-   position: relative;
+  position: relative;
   border-radius: 18px;
   padding: 2rem;
   color: black;
@@ -38,6 +38,9 @@
   padding-bottom: 6rem;
 }
 
+.back-home {
+  height: 30px;
+}
 
 
 .modal-content::-webkit-scrollbar {
@@ -95,16 +98,19 @@
 
 .arrow:hover {
   opacity: 1;
-  color: #5f07f6;
 
 }
 
-.arrow.left {
+.arrow-left {
   left: -30px;
+  height: 50px;
+  cursor: pointer;
 }
 
-.arrow.right {
+.arrow-right {
   right: -30px;
+  height: 50px;
+  cursor: pointer;
 }
 
 /* Navigation lines */
@@ -158,17 +164,3 @@
   }
 }
 
-.modal-close-icon {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-  z-index: 10;
-}
-
-.modal-close-icon:hover {
-  opacity: 1;
-}

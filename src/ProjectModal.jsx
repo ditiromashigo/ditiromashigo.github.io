@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import "./ProjectModal.css";
 import closeIcon from "../images/close.svg";
+import leftButton from "../images/left-arrow.svg"
+import rightButton from "../images/right-arrow.svg"
+import backHome from "../images/airdroid.svg"
 
 export default function ProjectModal({ project, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,8 +34,8 @@ export default function ProjectModal({ project, onClose }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-      <img
-          src="../images/close.svg"
+        <img
+          src={closeIcon}
           alt="Close modal"
           className="modal-close-icon"
           onClick={onClose}
@@ -43,12 +46,12 @@ export default function ProjectModal({ project, onClose }) {
         </h2>
 
         <div className="carousel-wrapper">
-          <button
-            className="arrow left"
+          <img
+            src={leftButton}
+            alt="Arrow left"
+            className="arrow-left"
             onClick={() => scrollTo(Math.max(currentIndex - 1, 0))}
-          >
-            ‹
-          </button>
+          />
 
           <div className="carousel-container" ref={scrollRef}>
             {project.images.map((src, i) => (
@@ -61,14 +64,14 @@ export default function ProjectModal({ project, onClose }) {
             ))}
           </div>
 
-          <button
-            className="arrow right"
+          <img
+            src={rightButton}
+            alt="Arrow Right"
+            className="arrow-right"
             onClick={() =>
               scrollTo(Math.min(currentIndex + 1, project.images.length - 1))
             }
-          >
-            ›
-          </button>
+          />
         </div>
 
         <div className="carousel-lines">
@@ -91,7 +94,7 @@ export default function ProjectModal({ project, onClose }) {
         <p className="project-description">{project.description}</p>
 
         <button className="close-button" onClick={onClose}>
-          back home
+          <img src={backHome} alt="back home" className="back-home" /><div>back home</div>
         </button>
       </div>
     </div>

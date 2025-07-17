@@ -31,8 +31,8 @@
   padding: 2rem;
   color: black;
   max-width: 80%;
-  max-height: 90vh; 
-  overflow-y: auto;     /* allows scroll */
+  max-height: 90vh;
+  overflow-y: auto; /* allows scroll */
   text-align: left;
   box-shadow: 0 0 15px 15px rgba(255, 255, 255, 50);
   padding-bottom: 6rem;
@@ -42,11 +42,9 @@
   height: 30px;
 }
 
-
 .modal-content::-webkit-scrollbar {
   display: none;
 }
-
 
 .modal-content img {
   max-width: 100%;
@@ -76,8 +74,8 @@
   flex: 0 0 100%;
   scroll-snap-align: center;
   width: 100%;
-  height: auto;              /* 👈 allow natural height */
-  object-fit: contain;       /* 👈 prevent cropping */
+  height: auto; /* 👈 allow natural height */
+  object-fit: contain; /* 👈 prevent cropping */
   margin: 0;
 }
 
@@ -96,9 +94,9 @@
   transition: opacity 0.3s;
 }
 
-.arrow:hover {
-  opacity: 1;
-
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 0.5;
 }
 
 .arrow-left {
@@ -113,17 +111,23 @@
   cursor: pointer;
 }
 
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 0.5;
+}
+
 /* Navigation lines */
 .carousel-lines {
   display: flex;
   justify-content: center;
   gap: 6px;
   margin: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 .line {
-  width: 20px;
-  height: 2px;
+  width: 25px;
+  height: 1px;
   background: rgba(0, 0, 0, 0.2);
   transition: background 0.3s;
 }
@@ -134,7 +138,6 @@
 
 .project-title {
   text-align: center;
-  
 }
 
 /* Description */
@@ -149,7 +152,7 @@
 .image-caption {
   margin-top: 1rem;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;;
+  padding-bottom: 0.5rem;
   border-top: 1px solid #939393;
   font-size: 0.9rem;
   color: #666;
@@ -160,7 +163,5 @@
   .modal-content {
     padding-bottom: 6rem;
     max-width: 95%;
-
   }
 }
-

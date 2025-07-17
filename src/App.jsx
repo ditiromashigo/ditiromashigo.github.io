@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import BlobScene from "./BlobScene";
 import TopMenu from "./TopMenu";
 import ProjectModal from "./ProjectModal";
-import AboutModal from "./AboutModal";
 import BottomMenu from "./BottomMenu";
 import Papa from "papaparse";
 import "./App.css";
@@ -11,11 +10,13 @@ function App() {
   const [activeProject, setActiveProject] = useState(null);
   const [showAbout, setShowAbout] = useState(false);
   const [aboutData, setAboutData] = useState({});
+  const [showColophon, setShowColophon] = useState(false);
   const [exhibitions, setExhibitions] = useState([]);
 
   const reset = () => {
     setActiveProject(null);
     setShowAbout(false);
+    setShowColophon(false);
   };
 
   useEffect(() => {
@@ -51,11 +52,7 @@ function App() {
       <TopMenu onReset={reset} />
 
       {activeProject && (
-        <ProjectModal
-          project={activeProject}
-          onClose={reset}
-
-        />
+        <ProjectModal project={activeProject} onClose={reset} />
       )}
 
       <BlobScene
@@ -68,6 +65,8 @@ function App() {
         setShowAbout={setShowAbout}
         aboutData={aboutData}
         exhibitions={exhibitions}
+        showColophon={showColophon}
+        setShowColophon={setShowColophon}
         setActiveProject={setActiveProject} // In case future use
         reset={reset}
       />

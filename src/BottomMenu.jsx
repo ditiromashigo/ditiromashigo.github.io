@@ -5,15 +5,17 @@ import emailIcon from "../images/paper.svg";
 import instagramIcon from "../images/instagram-thin.svg";
 import colophonIcon from "../images/underhand.svg";
 
-
 export default function BottomMenu({
   showAbout,
   setShowAbout,
+  showColophon,
+  setShowColophon,
   aboutData,
   exhibitions,
   reset,
 }) {
   const openModal = () => setShowAbout(true);
+  const openColophon = () => setShowColophon(true);
   const closeModal = () => setShowAbout(false);
 
   return (
@@ -41,8 +43,8 @@ export default function BottomMenu({
           <img src={instagramIcon} alt="Instagram" width={50} height={50} />
         </a>
 
-        <div onClick={openModal} className="menu-button" title="About">
-          <img src={colophonIcon} alt="About" width={50} height={50} />
+        <div onClick={openColophon} className="menu-button" title="Colophon">
+          <img src={colophonIcon} alt="Colophon" width={50} height={50} />
         </div>
       </div>
 
@@ -82,7 +84,15 @@ export default function BottomMenu({
             </div>
           </>
         </AboutModal>
-        
+      )}
+
+{showColophon && (
+        <AboutModal onClose={reset}>
+          <>
+          <div>This is a Colophon</div>
+
+          </>
+        </AboutModal>
       )}
     </>
   );

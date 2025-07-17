@@ -1,4 +1,4 @@
-/* This applies gap to your internal layout */
+/* This applies gap to the internal layout */
 .layout {
   display: flex;
   flex-direction: column;
@@ -226,4 +226,19 @@
 
 .menu-button:hover {
   opacity: 0.5;
+}
+
+.colophon-columns {
+  column-count: 2;
+  column-gap: 2rem; /* adjust spacing between columns */
+}
+
+.colophon-columns p {
+  margin-bottom: 1rem; /* or any value like 1em, 24px etc. */
+}
+
+@media (max-width: 768px) {
+  .colophon-columns {
+    column-count: 1;
+  }
 }

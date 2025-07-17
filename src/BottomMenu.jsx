@@ -14,10 +14,15 @@ export default function BottomMenu({
   exhibitions,
   reset,
 }) {
-  const openModal = () => setShowAbout(true);
-  const openColophon = () => setShowColophon(true);
-  const closeModal = () => setShowAbout(false);
+  const openModal = () => {
+    setShowAbout(true);
+    setShowColophon(false); // 👈 Close Colophon if About is opened
+  };
 
+  const openColophon = () => {
+    setShowColophon(true);
+    setShowAbout(false); // 👈 Close About if Colophon is opened
+  };
   return (
     <>
       <div className="bottom-menu">
@@ -52,7 +57,7 @@ export default function BottomMenu({
         <AboutModal onClose={reset}>
           <>
             <br />
-            <img src="./images/kala04.JPG" alt="Ditiro Mashigo" />
+            <img src="./images/Ditiro_01.jpg" alt="Ditiro Mashigo" />
             <div className="image-caption">
               <p>
                 <strong>Image:</strong> {aboutData.caption}
@@ -86,11 +91,45 @@ export default function BottomMenu({
         </AboutModal>
       )}
 
-{showColophon && (
+      {showColophon && (
         <AboutModal onClose={reset}>
           <>
-          <div>This is a Colophon</div>
+            <br />
 
+            <img src="./images/kala04.JPG" alt="Ditiro Mashigo" />
+            <div className="image-caption">
+              {" "}
+              <p>
+                <strong>Image:</strong> Portrait of Ditiro Mashigo by Zydia
+                Botes
+              </p>
+            </div>
+            <br />
+            <div className="colophon-columns">
+              <p>
+                <strong>Background: </strong>This website is an artist portfolio
+                and digital archive of the work of Ditiro Mashigo, created in
+                2025
+              </p>
+              <p>
+                <strong>Technology used: </strong>This website was custom coded
+                by Lara Koseff, using JavaScript libraries React and Three.js,
+                and is hosted on GitHub pages.
+              </p>
+              <p>
+                <strong>Design, fonts and artwork: </strong>The website was
+                designed by Lara Koseff. Fonts include Figtree and Remixa.
+                Featured artworks throughout are by Ditiro Mashigo and are
+                copyright of the artist.
+              </p>
+              <p>
+                <strong>Support: </strong>This project contributed to INCCA's
+                “pay it forward” imperative that formed part of their
+                Presidential Employment Stimulus Programme (PESP 4) award from
+                the National Arts Council South Africa (NAC) in 2023 for their
+                project, Art After Baby.
+              </p>
+            </div>
           </>
         </AboutModal>
       )}

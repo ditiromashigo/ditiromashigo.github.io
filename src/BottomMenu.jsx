@@ -27,7 +27,7 @@ export default function BottomMenu({
     <>
       <div className="bottom-menu">
         <div onClick={openModal} className="menu-button" title="About">
-          <img src={smileIcon} alt="About" width={50} height={50} />
+          <img src={smileIcon} alt="About" />
         </div>
 
         <a
@@ -35,7 +35,7 @@ export default function BottomMenu({
           className="menu-button"
           title="Email"
         >
-          <img src={emailIcon} alt="Email" width={50} height={50} />
+          <img src={emailIcon} alt="Email" />
         </a>
 
         <a
@@ -45,11 +45,11 @@ export default function BottomMenu({
           title="Instagram"
           className="menu-button"
         >
-          <img src={instagramIcon} alt="Instagram" width={50} height={50} />
+          <img src={instagramIcon} alt="Instagram" />
         </a>
 
         <div onClick={openColophon} className="menu-button" title="Colophon">
-          <img src={colophonIcon} alt="Colophon" width={50} height={50} />
+          <img src={colophonIcon} alt="Colophon" />
         </div>
       </div>
 

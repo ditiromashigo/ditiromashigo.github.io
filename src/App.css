@@ -5,6 +5,9 @@
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -224,6 +227,12 @@
   cursor: pointer;
 }
 
+.menu-button img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
 .menu-button:hover {
   opacity: 0.5;
 }
@@ -237,8 +246,103 @@
   margin-bottom: 1rem; /* or any value like 1em, 24px etc. */
 }
 
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 1024px) {
+  .animated-name {
+    font-size: 1.5rem;
+    gap: 0rem;
+
+  }
+
+  .animated-name .middle-letters {
+    font-size: 2.2rem;
+    line-height: 1.68;
+
+  }
+
+  .animated-name .contracted:first-child {
+    transform: translateX(5.4rem);
+  }
+
+  .drag-hint {
+    font-size: 0.9rem;
+  }
+
+  .top-menu h1 {
+    font-size: 1.5rem;
+  }
+
+
+}
+
 @media (max-width: 768px) {
   .colophon-columns {
     column-count: 1;
   }
+
+  .letter {
+    font-size: 28px;
+  }
+
+  .animated-name {
+    font-size: 1.3rem;
+  }
+
+  .animated-name .middle-letters {
+    font-size: 1.2rem;
+    line-height: 1.56;
+  }
+
+  .animated-name .contracted:first-child {
+    transform: translateX(3rem);
+  }
+
+  .top-menu h1 {
+    font-size: 1.3rem;
+  }
+
+  .menu-button {
+    padding: 0.5em 1em;
+  }
+  
+  .menu-button img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .bottom-menu button {
+    font-size: 1.3rem;
+  }
+
 }
+
+@media (max-width: 480px) {
+  .letter {
+    font-size: 20px;
+  }
+
+  .drag-hint {
+    font-size: 0.75rem;
+    bottom: 100px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .modal-close-icon {
+    width: 30px;
+    height: 30px;
+    right: 1rem;
+  }
+
+  .close-button {
+    width: 9rem;
+    height: 2.5rem;
+    border: 1px solid;
+  }
+
+  .menu-button {
+    padding: 0.5em 1em;
+  }
+}
+

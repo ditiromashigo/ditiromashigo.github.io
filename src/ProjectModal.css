@@ -159,9 +159,40 @@
   text-align: left;
 }
 
+
+
 @media (max-width: 600px) {
   .modal-content {
-    padding-bottom: 6rem;
     max-width: 95%;
+    padding: 1.5rem;
+    padding-bottom: 5rem;
+  }
+
+  
+  .carousel-container {
+    max-height: 300px;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    display: none; /* Hide arrows on small screens */
+  }
+
+  .carousel-lines {
+    gap: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .image-caption {
+    font-size: 0.8rem;
   }
 }
+

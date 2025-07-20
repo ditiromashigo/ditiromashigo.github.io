@@ -14,19 +14,24 @@
   z-index: 10;
 }
 
+.menu-button {
+  cursor: pointer;
+  color: var(--icon-color); /* then update --icon-color via dark/light mode */
+}
+
 /* Wrapper that fakes the border using a gradient background */
 .modal-border {
   padding: 1px; /* This defines the "thickness" of the border */
   border-radius: 24px;
   box-shadow: 0 0 15px 15px rgba(255, 255, 255, 50);
-  background: white;
+  background: var(--modal-bg);
 }
 
 /* The actual modal */
 .modal-content {
   position: relative;
-  background: white;
-  position: relative;
+  background: var(--modal-bg);
+  color: var(--modal-text);
   border-radius: 18px;
   padding: 2rem;
   color: black;
@@ -38,8 +43,13 @@
   padding-bottom: 6rem;
 }
 
+.dark .modal-content {
+  box-shadow: 0 0 15px 15px rgba(89, 85, 85, 0); /* softer white glow for dark mode */
+}
+
 .back-home {
   height: 30px;
+  color: var(--icon-color); 
 }
 
 .modal-content::-webkit-scrollbar {
@@ -103,17 +113,39 @@
   left: -30px;
   height: 50px;
   cursor: pointer;
+  color: var(--icon-color); 
 }
 
 .arrow-right {
   right: -30px;
   height: 50px;
   cursor: pointer;
+  color: var(--icon-color); 
 }
+
+@keyframes iconcolor {
+  0% {
+    color: #fde9ff;
+  }
+  25% {
+    color: #7600ff;
+  }
+  50% {
+    color: #49fce3;
+  }
+  75% {
+    color: #fcf202;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+
 
 .arrow-left:hover,
 .arrow-right:hover {
-  opacity: 0.5;
+  animation: iconcolor 3s infinite alternate;
 }
 
 /* Navigation lines */
@@ -128,16 +160,17 @@
 .line {
   width: 25px;
   height: 1px;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--line-color);
   transition: background 0.3s;
 }
 
 .line.active {
-  background: black;
+  background: var(--text-color);
 }
 
 .project-title {
   text-align: center;
+  color: var(--text-color);
 }
 
 /* Description */
@@ -145,7 +178,7 @@
   text-align: left;
   font-size: 1rem;
   margin-top: 1rem;
-  color: #333;
+  color: var(--text-color);
   padding-bottom: 1rem;
 }
 
@@ -155,7 +188,7 @@
   padding-bottom: 0.5rem;
   border-top: 1px solid #939393;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-color);
   text-align: left;
 }
 
@@ -163,14 +196,15 @@
 
 @media (max-width: 600px) {
   .modal-content {
-    max-width: 95%;
+    max-width: 100%;
     padding: 1.5rem;
     padding-bottom: 5rem;
+    /* padding-top: 4rem; */
   }
 
   
   .carousel-container {
-    max-height: 300px;
+    max-height: 350px;
   }
 
   .arrow-left,
@@ -185,6 +219,7 @@
 
   .project-title {
     font-size: 1.2rem;
+    padding-top: 1rem;
   }
 
   .project-description {

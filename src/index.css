@@ -4,14 +4,42 @@
   box-sizing: border-box;
 }
 
+/* === Dark Mode Variables === */
+:root {
+  --background-color: #f4f4f4;
+  --text-color: #000000;
+  --menu-gradient: linear-gradient(to bottom, #f4f4f4 65%, transparent);
+  --bottom-menu-gradient: linear-gradient(to top, #f4f4f4 70%, transparent);
+  --highlight-color: rgb(6, 237, 195);
+  --button-color: black;
+  --modal-bg: white;
+  --modal-text: black;
+  --border-color: black;
+  --line-color: rgba(0, 0, 0, 0.2);
+  --icon-color: #000000;
+}
+
+.dark {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --menu-gradient: linear-gradient(to bottom, #121212 65%, transparent);
+  --bottom-menu-gradient: linear-gradient(to top, #121212 70%, transparent);
+  --highlight-color: #bb86fc;
+  --button-color: white;
+  --modal-bg: #1e1e1e;
+  --modal-text: #ffffff;
+  --border-color: #ffffff;
+  --line-color: rgba(255, 255, 255, 0.2);
+  --icon-color: white;
+}
+
 body {
-  /* font-family: "Kumbh Sans", sans-serif; */
-  /* font-family: "Outfit", sans-serif; */
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
+  color: var(--text-color);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -24,6 +52,12 @@ h2 {
   letter-spacing: 0.05ch;
 }
 
+::selection {
+  background-color: var(--highlight-color);
+  color: black; 
+}
+
+
 button {
   font-family: "Figtree", sans-serif;
   border-radius: 20px;
@@ -32,7 +66,7 @@ button {
   border: #545555 solid 0.1rem;
   padding: 0.6em 1.2em;
   cursor: pointer;
-  color: black; /* or whatever color you want */
+  color: var(--button-color);
   /* -webkit-appearance: none; Remove default iOS styling */
   -webkit-tap-highlight-color: transparent; /* Prevent highlight */
 }
@@ -53,36 +87,9 @@ button {
     opacity 0.4s ease;
 }
 
-/* .scatter {
-  transform: translate(
-    calc((Math.random() - 0.5) * 40px),
-    calc((Math.random() - 0.5) * 40px)
-  ) rotate(calc((Math.random() - 0.5) * 40deg));
-  opacity: 0.3;
-} */
 
-@keyframes divcolor {
-  0% {
-    background-color: #fde9ff;
-  }
-  25% {
-    background-color: #7600ff;
-  }
-  50% {
-    background-color: #49fce3;
-  }
-  75% {
-    background-color: #fcf202;
-  }
-  100% {
-    background-color: #ff0000;
-  }
-}
 
-/* button:hover {
-  animation-name: divcolor;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-direction: alternate;
-} */
+
+
+
+

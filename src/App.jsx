@@ -12,6 +12,7 @@ function App() {
   const [aboutData, setAboutData] = useState({});
   const [showColophon, setShowColophon] = useState(false);
   const [exhibitions, setExhibitions] = useState([]);
+  const [awards, setAwards] = useState([]);
   const [darkMode, setDarkMode] = useState(() => {
     const stored = localStorage.getItem("darkMode");
     return stored ? stored === "true" : window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -45,6 +46,15 @@ useEffect(() => {
           }
         });
         setAboutData(data);
+      });
+
+                // Fetch awards
+    fetch(
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vRzL3JGR-kjrREbNa6qJFqiAT8u1kdFAi2_4HbiDogDk1dSgLqZIo7TI4HhwTG0R4oLaaYQSbrFz9d_/pub?gid=1758434368&single=true&output=csv"    )
+      .then((res) => res.text())
+      .then((csv) => {
+        const parsed = Papa.parse(csv, { header: true, skipEmptyLines: true });
+        setAwards(parsed.data);
       });
 
     // Fetch exhibitions
@@ -93,6 +103,7 @@ useEffect(() => {
         setShowAbout={setShowAbout}
         aboutData={aboutData}
         exhibitions={exhibitions}
+        awards={awards}
         showColophon={showColophon}
         setShowColophon={setShowColophon}
         setActiveProject={setActiveProject} // In case future use

@@ -8,6 +8,7 @@ export default function BottomMenu({
   setShowColophon,
   aboutData,
   exhibitions,
+  awards,
   reset,
 }) {
   const openModal = () => {
@@ -133,7 +134,8 @@ export default function BottomMenu({
             <img src="./images/kala04.JPG" alt="Ditiro Mashigo" />
             <div className="image-caption">
               <p>
-                <strong>Image: </strong>Portrait of Ditiro Mashigo by Zydia Botes
+                <strong>Image: </strong>Portrait of Ditiro Mashigo by Zydia
+                Botes
               </p>
               <br />
             </div>
@@ -145,6 +147,21 @@ export default function BottomMenu({
                 </span>
               ))}
             </p>
+            <br />
+            <div className="exhibitions">
+              <div>
+                <strong>Awards</strong>
+              </div>
+              <br />
+              <div>
+                {awards.map((ex, i) => (
+                  <div key={i}>
+                    <strong>{ex.year}</strong> <em>{ex.title}</em>,{" "}
+                    {ex.entity}
+                  </div>
+                ))}
+              </div>
+            </div>
             <br />
             <div className="exhibitions">
               <div>
@@ -167,7 +184,7 @@ export default function BottomMenu({
       {showColophon && (
         <AboutModal onClose={reset}>
           <>
-          <h2 className="about-title">Colophon</h2>
+            <h2 className="about-title">Colophon</h2>
 
             <img src="./images/7777.jpg" alt="Ditiro Mashigo" />
             <div className="image-caption">

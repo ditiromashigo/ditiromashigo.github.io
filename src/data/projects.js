@@ -6,10 +6,10 @@ const projects = [
     year: "2022-ongoing",
     image: "/images/kala-blob.jpg",
     images: [
-      "/images/kala06.jpg",
-      "/images/kala01.jpg",
-      "/images/kala02.jpg",
-      "/images/kala03.jpg",
+      "/images/kala06.JPG",
+      "/images/kala01.JPG",
+      "/images/kala02.JPG",
+      "/images/kala03.JPG",
     ],
     captions: [
       `<em>Kala</em>, 2022-2023. Repurposed textiles. Dimensions variable (installation view). Photograph by Zydia Botes`,

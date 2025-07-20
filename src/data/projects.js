@@ -4,7 +4,7 @@ const projects = [
     id: 1,
     title: "Kala",
     year: "2022-ongoing",
-    image: "/images/kala.jpg",
+    image: "/images/kala-blob.jpg",
     images: [
       "/images/kala06.jpg",
       "/images/kala01.jpg",
@@ -23,7 +23,7 @@ const projects = [
     id: 2,
     title: "Kano",
     year: "2023",
-    image: "/images/kano04.jpg",
+    image: "/images/kano-blob.jpg",
     images: [
       "/images/kano01.jpg",
       "/images/kano02.jpg",
@@ -56,7 +56,7 @@ const projects = [
     id: 4,
     title: "Ha ke le tje ke le mobe",
     year: "2023",
-    image: "/images/Ha_ke_le_tje_ke_le_mobe_1.jpg",
+    image: "/images/Ha_ke-blob.jpg",
     images: [
       "/images/Ha_ke_le_tje_ke_le_mobe.jpg",
       "/images/Ha_ke_le_tje_ke_le_mobe_1.jpg",
@@ -71,7 +71,7 @@ const projects = [
     id: 5,
     title: "Fashion textiles",
     year: "Ongoing",
-    image: "/images/textile01.jpg",
+    image: "/images/textile-blob.jpg",
     images: ["/images/textile01.jpg"],
     captions: ["First image caption"],
     description: "",
@@ -80,7 +80,7 @@ const projects = [
     id: 6,
     title: "Perseverance o tswala Katlego",
     year: "2023",
-    image: "/images/Perseverance_o_tswala_Katlego.jpg",
+    image: "/images/Perseverance-blob.jpg",
     images: [
       "/images/Perseverance_o_tswala_Katlego02.jpg",
       "/images/Perseverance_o_tswala_Katlego.jpg",

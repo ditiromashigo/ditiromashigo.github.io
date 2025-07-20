@@ -156,8 +156,7 @@ export default function BottomMenu({
               <div>
                 {awards.map((ex, i) => (
                   <div key={i}>
-                    <strong>{ex.year}</strong> <em>{ex.title}</em>,{" "}
-                    {ex.entity}
+                    <strong>{ex.year}</strong> <em>{ex.title}</em>, {ex.entity}
                   </div>
                 ))}
               </div>
@@ -190,8 +189,14 @@ export default function BottomMenu({
             <div className="image-caption">
               {" "}
               <p>
-                <strong>Image:</strong> Portrait of Ditiro Mashigo by Zydia
-                Botes
+                <strong>Image:</strong> Installation view of Ditiro Mashigo’s
+                exhibition titled{" "}
+                <em>
+                  7.7.7.7 / X9 / ‘Ma Zith iingqondo zethu, / Zimbonge uYehova; /
+                  Kuba iinceba zakhe, / Zimi ngonaphakade{" "}
+                </em>
+                , Keyes Art Mile in Johannesburg, 2023 as part of INCCA’s Art
+                After Baby initiative. Photograph by Anthea Pokroy
               </p>
             </div>
             <br />
@@ -202,16 +207,17 @@ export default function BottomMenu({
                 2025
               </p>
               <p>
-                <strong>Technology used: </strong>This website was custom coded
-                by Lara Koseff, using JavaScript libraries React and Three.js,
-                and is hosted on GitHub pages.
-              </p>
-              <p>
-                <strong>Design, fonts and artwork: </strong>The website was
-                designed by Lara Koseff. Fonts include Figtree and Remixa.
+                <strong>Artwork: </strong>
                 Featured artworks throughout are by Ditiro Mashigo and are
                 copyright of the artist.
               </p>
+              <p>
+                <strong>Technology, Design & Fonts: </strong>This website was
+                custom coded and designed by Lara Koseff, using JavaScript
+                libraries React and Three.js, and is hosted on GitHub pages.
+                Fonts include Figtree and Remixa.
+              </p>
+
               <p>
                 <strong>Support: </strong>This project contributed to INCCA's
                 “pay it forward” imperative that formed part of their

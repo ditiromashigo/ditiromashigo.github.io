@@ -189,6 +189,7 @@
   border-top: 1px solid #939393;
   font-size: 0.9rem;
   color: var(--text-color);
+  opacity: 0.7;
   text-align: left;
 }
 

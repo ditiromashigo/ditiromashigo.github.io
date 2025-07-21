@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import "./ProjectModal.css";
 
-
 export default function ProjectModal({ project, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef();
@@ -159,6 +158,9 @@ export default function ProjectModal({ project, onClose }) {
 
           <div>back home</div>
         </button>
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );

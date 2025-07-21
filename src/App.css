@@ -66,8 +66,8 @@ p {
 .animated-name .middle-letters {
   display: inline-block;
   opacity: 1;
-  font-size: 2.2rem; /* Ensures same font size */
-  line-height: 1.67;
+  font-size: 40px; /* Ensures same font size */
+  line-height: 1.4;
   transition:
     opacity 0.4s ease,
     transform 0.4s ease;
@@ -88,7 +88,7 @@ p {
 }
 
 .animated-name .contracted:first-child {
-  transform: translateX(6rem);
+  transform: translateX(6.2rem);
 }
 
 .animated-name .contracted:last-child {
@@ -316,18 +316,9 @@ p {
 
 @media (max-width: 1024px) {
   .animated-name {
-    font-size: 1.5rem;
     gap: 0rem;
   }
 
-  .animated-name .middle-letters {
-    font-size: 2.2rem;
-    line-height: 1.68;
-  }
-
-  .animated-name .contracted:first-child {
-    transform: translateX(5.4rem);
-  }
 
   .drag-hint {
     font-size: 0.9rem;
@@ -335,9 +326,6 @@ p {
     color: var(--text-color);
   }
 
-  .top-menu h1 {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -346,24 +334,16 @@ p {
   }
 
   .letter {
-    font-size: 20px;
-  }
-
-  .animated-name {
-    font-size: 1.3rem;
+    font-size: 25px;
   }
 
   .animated-name .middle-letters {
-    font-size: 1.2rem;
-    line-height: 1.56;
+    font-size: 25px;
+    line-height: 1.4;
   }
 
   .animated-name .contracted:first-child {
-    transform: translateX(3rem);
-  }
-
-  .top-menu h1 {
-    font-size: 1.3rem;
+    transform: translateX(4rem);
   }
 
   .menu-button {
@@ -391,9 +371,7 @@ p {
 }
 
 @media (max-width: 480px) {
-  .letter {
-    font-size: 20px;
-  }
+
 
   .drag-hint {
     font-size: 0.75rem;

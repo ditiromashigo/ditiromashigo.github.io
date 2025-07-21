@@ -204,8 +204,18 @@
   }
 
   
-  .carousel-container {
-    max-height: 350px;
+  .carousel-wrapper {
+    width: 100vw;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .carousel-image {
+    width: 100vw; /* 👈 full viewport width */
+    max-width: 100vw;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
   }
 
   .arrow-left,

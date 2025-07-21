@@ -20,7 +20,7 @@
 }
 
 .dark {
-  --background-color: #242225;
+  --background-color: #171617;
   --text-color: #ffffff;
   --menu-gradient: linear-gradient(to bottom, #121212 65%, transparent);
   --bottom-menu-gradient: linear-gradient(to top, #121212 70%, transparent);

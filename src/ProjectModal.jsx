@@ -161,6 +161,7 @@ export default function ProjectModal({ project, onClose }) {
         <br />
         <br />
         <br />
+        <br />
       </div>
     </div>
   );

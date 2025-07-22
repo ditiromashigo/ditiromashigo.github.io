@@ -22,3 +22,19 @@ A custom interactive portfolio site for South African artist and textile designe
 - **PapaParse** for loading CSV data from Google Sheets
 - **CSS3** (no frameworks)
 - **GitHub Pages** for deployment
+  
+## 🔗 External Links
+
+[LinkedIn](https://www.linkedin.com/in/ditiro-mashigo-8332838a/)
+[Instagram](https://www.instagram.com/ditiro.mashigo/?hl=en)
+
+## 👩🏾 About the Artist
+
+Ditiro Mashigo is a South African artist, textile and fashion designer. Her work explores African aesthetics, memory, spirituality, and womanhood through fiber, painting, printing, and tactile sculpture. She is the founder of the fashion label Serati and an alumna of Design Indaba. More about [Ditiro](https://www.ditiromashigo.co.za) →
+
+## Design & Development
+
+This site was designed and custom coded by creative developer [Lara Koseff](https://larakoseff.com) ([GitHub](https://github.com/larakoseff)). The development formed part of INCCA’s ([incca.org.za](https://incca.org.za)) “pay it forward” imperative, supported through their Presidential Employment Stimulus Programme (PESP 5) award from the National Arts Council South Africa (NAC) in 2024/25, for the project *Art After Baby*.
+
+
+© 2025 Ditiro Mashigo. All rights reserved.

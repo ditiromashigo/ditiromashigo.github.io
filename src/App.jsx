@@ -3,6 +3,7 @@ import BlobScene from "./BlobScene";
 import TopMenu from "./TopMenu";
 import ProjectModal from "./ProjectModal";
 import BottomMenu from "./BottomMenu";
+import SoundToggle from "./SoundToggle";
 import Papa from "papaparse";
 import "./App.css";
 
@@ -88,7 +89,7 @@ useEffect(() => {
   </svg>
 </button>
 
-
+<SoundToggle />
       {activeProject && (
         <ProjectModal project={activeProject} onClose={reset} />
       )}

@@ -296,6 +296,22 @@ p {
   z-index: 1000;
 }
 
+.sound-toggle {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.sound-toggle:hover {
+  animation: iconcolor 3s infinite alternate;
+}
+
 .dark-mode-icon {
   width: 40px;
   height: 40px;
@@ -303,7 +319,7 @@ p {
 }
 
 .set-dark:hover .dark-mode-icon {
-  transform: rotate(20deg);
+  /* transform: rotate(20deg); */
   animation: iconcolor 3s infinite alternate;
 }
 
@@ -401,6 +417,13 @@ p {
   .dark-mode-icon {
     width: 25px;
     height: 25px;
+  }
+
+  .sound-toggle {
+    width: 30px;
+    height: 30px;
+    top: 1rem;
+    right: 1rem;
   }
 
   .set-dark {

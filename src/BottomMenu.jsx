@@ -131,14 +131,20 @@ export default function BottomMenu({
           <>
             <h2 className="about-title">Biography & CV</h2>
 
-            <img src="./images/kala04.JPG" alt="Ditiro Mashigo" />
-            <div className="image-caption">
-              <p>
-                <strong>Image: </strong>Portrait of Ditiro Mashigo by Zydia
-                Botes
-              </p>
-              <br />
-            </div>
+            {aboutData.image && (
+              <>
+                <img src={aboutData.image} alt="Ditiro Mashigo" />
+                {aboutData.caption && (
+                  <div className="image-caption">
+                    <p>
+                      <strong>Image: </strong>
+                      {aboutData.caption}
+                    </p>
+                    <br />
+                  </div>
+                )}
+              </>
+            )}
             <p>
               {aboutData.about?.split("\n").map((line, i) => (
                 <span key={i}>

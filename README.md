@@ -1,15 +1,16 @@
 # Ditiro Mashigo Portfolio Website
 
-A custom interactive portfolio site for South African artist and textile designer **Ditiro Mashigo**, showcasing her exhibitions, creative process, and professional collaborations.
+A custom interactive portfolio site for South African artist and textile designer **Ditiro Mashigo**, showcasing her work, exhibitions, creative process, and professional collaborations.
 
 🌍 **Live site:** [ditiromashigo.co.za](https://www.ditiromashigo.co.za)
 
 ## ✨ Features
 
-- **Animated 3D orbs** built with `react-three-fiber` and `@react-spring/three`
+- **Animated 3D orbs** built with `react-three-fiber` and `@react-spring/three` in order to display each body of work
 - **Responsive design** for desktop and mobile
 - **Dark mode toggle** with local storage persistence
-- **Exhibition carousel** with swipe/arrow navigation and captions
+- **Sound toggle** providing an added experiential element 
+- **Image carousel** with swipe/arrow navigation and captions made using CSS only
 - **About** and **Colophon** modals with dynamic content from Google Sheets
 - **Metadata & SEO** optimized for discoverability
 - **Custom domain**: `ditiromashigo.co.za` via GitHub Pages

@@ -9,7 +9,7 @@ export default function TopMenu({ onReset }) {
   };
 
   return (
-    <div className="top-menu">
+    <div className="name-wrapper">
       <h1
         className="animated-name"
         onMouseEnter={() => setHovered(true)}

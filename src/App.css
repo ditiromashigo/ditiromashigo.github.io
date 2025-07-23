@@ -134,12 +134,14 @@ p {
 .top-menu {
   position: fixed;
   top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  padding: 1rem 0 2rem;
+  padding: 1rem;
   background: transparent;
-  z-index: 100;
+  z-index: 1000;
   user-select: none;
-
 }
 
 
@@ -162,6 +164,12 @@ p {
   margin: 0;
   font-family: "Remixa", sans-serif;
   letter-spacing: 0.1em;
+}
+
+.name-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .bottom-menu {
@@ -290,10 +298,10 @@ p {
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  position: fixed;
+  /* position: fixed;
   top: 2rem;
   left: 2rem;
-  z-index: 1000;
+  z-index: 1000; */
 }
 
 .sound-toggle {
@@ -302,10 +310,10 @@ p {
   background: none;
   border: none;
   cursor: pointer;
-  position: fixed;
+  /* position: fixed;
   top: 2rem;
   right: 2rem;
-  z-index: 1000;
+  z-index: 1000; */
 }
 
 .sound-toggle:hover {
@@ -422,12 +430,10 @@ p {
   .sound-toggle {
     width: 30px;
     height: 30px;
-    top: 1rem;
-    right: 1rem;
   }
 
-  .set-dark {
+  /* .set-dark {
     top: 1rem;
     left: 1rem;
-  }
+  } */
 }

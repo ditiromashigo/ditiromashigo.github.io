@@ -58,6 +58,32 @@ h2 {
 }
 
 
+/* ----links-----*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color:#bb86fc;
+  text-decoration: none;
+}
+
+
 button {
   font-family: "Figtree", sans-serif;
   border-radius: 20px;

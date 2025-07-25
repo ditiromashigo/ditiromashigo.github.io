@@ -58,23 +58,41 @@ const projects = [
     year: "2023",
     image: "/images/Ha_ke-blob.jpg",
     images: [
-      "/images/Ha_ke_le_tje_ke_le_mobe.jpg",
       "/images/Ha_ke_le_tje_ke_le_mobe_1.jpg",
+      "/images/Ha_ke_le_tje_ke_le_mobe_2.jpg",
+      "/images/Ha_ke_le_tje_ke_le_mobe_3.jpg",
+      "/images/Ha_ke_le_tje_ke_le_mobe.jpg",
     ],
     captions: [
+      `<em>Ha ke le tje ke le mobe I</em>, 2023. Monotype with thread. 70 x 50 cm`,
+      `<em>Ha ke le tje ke le mobe II</em>, 2023. Monotype with thread. 70 x 50 cm`,
+      `<em>Ha ke le tje ke le mobe III</em>, 2023. Monotype with thread. 70 x 50 cm`,
       `<em>Ha ke le tje ke le mobe, I, II</em> and <em>III</em>. Installation view. Photograph by Anthea Pokroy`,
-      "Second caption",
     ],
     description: "",
   },
   {
     id: 5,
-    title: "Fashion textiles",
+    title: "Serati Ltd",
     year: "Ongoing",
     image: "/images/textile-blob.jpg",
-    images: ["/images/textile01.jpg"],
-    captions: ["First image caption"],
-    description: "",
+    images: [
+      "/images/textile_04_2.jpg",
+      "/images/textile_04.jpg",
+      "/images/textile_02.jpg",
+      "/images/textile_06.jpg",
+      "/images/textile_05.jpg",
+      "/images/textile_07.jpg",
+      "/images/textile_09.jpg",
+      "/images/textile_08.jpg",
+    ],
+    captions: [],
+    description: `Serati Ltd is Ditiro Mashigo's slow fashion label. Named after her middle name, meaning “prayers” in Sepedi, Serati is rooted in Mashigo’s desire to make clothing that honours both personal and planetary healing. The label embraces natural fibres, botanical dyeing, and artisanal techniques as a way to reconnect with indigenous knowledge systems and honour the environment. Each collection is shaped by dreams and ancestral intuition – like the vision that led her to create a kimono inspired by a memory of her late grandmother. In 2019, Mashigo was commissioned to design costumes for the Grammy Award-winning Soweto Gospel Choir, a milestone project for which she employed over 15 women, reinforcing her commitment to community empowerment. She later collaborated with Mr. Price Home on a signature homeware collection, expanding Serati’s creative vision into the domestic realm. Based in Limpopo and working closely with local artisans, Mashigo sees Serati not only as a fashion label, but as a form of storytelling – where garments become vessels of spirit, soil, and identity.
+<br />
+<br />
+    Serati, <a href="https://incca.org.za/Feature-Threaded-histories-and-spiritual-tactility" target="_blank" rel="noopener noreferrer">
+    writes Christa Dee</a>, is for what the artist describes as "'a majestic woman who resembles everything and anything that is African and beautiful.' This is also a vision of the woman she wants to embody through her life and her artistic outputs. 'I look at women as sort of these angelic beings,' Mashigo continues, 'Women pray, women feed and nurture, women create spaces of worship, women create environments that are enabling for growth and that is sacred work to me. Even when I have my eyes closed and I think of something to create, I always go right back to the sacred space that women occupy in our lives and in their own lives. I always want to celebrate that.'"
+`,
   },
   {
     id: 6,
@@ -89,7 +107,8 @@ const projects = [
       `<em>Perseverance o tswala Katlego</em>, 2023. Woven textile. Dimensions variable`,
       `<em>Perseverance o tswala Katlego</em>, 2023. Woven textile. Detail`,
     ],
-    description: "",
+    description: `Ditiro Mashigo’s tapestry <em>Perseverance o tswala Katlego</em> (2023), <a href="https://incca.org.za/Feature-Threaded-histories-and-spiritual-tactility" target="_blank" rel="noopener noreferrer">
+    writes Christa Dee</a>, “presents shades of green, deep reds and yellows knotted and woven together with thin plastic tubing of the same tones. In this way, viewers can experience an exploration of materiality and weaving techniques, producing a beautifully unkempt textured piece that invites the impulse to run one’s fingers over it. Here, textile-making can be read as a metaphor for the flexibility of the human spirit, the strength of women-led domestic practices and a visual representation of how memories are passed on through generations – core inquiries in Mashigo’s work.”`,
   },
 ];
 

@@ -31,10 +31,10 @@ const projects = [
       "/images/kano06.jpg",
     ],
     captions: [
-      `Ditiro Mashigo. <em>Kano</em>, 2023. Pure wool, acrylic wool, plastic tubing, Variations of Fringed pure cotton thread totems, bull denim apron, bound and suspended sparsely on a 1.2 meter x 1.5 meter metal mesh grid. Installation image by Anthea Pokroy`,
-      `Ditiro Mashigo. <em>Kano</em>, 2023. Pure wool, acrylic wool, plastic tubing, Variations of Fringed pure cotton thread totems, bull denim apron, bound and suspended sparsely on a 1.2 meter x 1.5 meter metal mesh grid. Installation image by Anthea Pokroy`,
-      `Ditiro Mashigo. <em>Kano</em>, 2023. Pure wool, acrylic wool, plastic tubing, Variations of Fringed pure cotton thread totems, bull denim apron, bound and suspended sparsely on a 1.2 meter x 1.5 meter metal mesh grid. Installation image by Anthea Pokroy`,
-      `Ditiro Mashigo. <em>Kano</em>, 2023. Pure wool, acrylic wool, plastic tubing, Variations of Fringed pure cotton thread totems, bull denim apron, bound and suspended sparsely on a 1.2 meter x 1.5 meter metal mesh grid. Installation image by Anthea Pokroy`,
+      `<em>Kano</em>, 2023. Pure wool, acrylic wool, plastic tubing, Variations of Fringed pure cotton thread totems, bull denim apron, bound and suspended sparsely on a 1.2 meter x 1.5 meter metal mesh grid. Installation image by Anthea Pokroy`,
+      `<em>Kano</em>, 2023. Pure wool, acrylic wool, plastic tubing, Variations of Fringed pure cotton thread totems, bull denim apron, bound and suspended sparsely on a 1.2 meter x 1.5 meter metal mesh grid. Installation image by Anthea Pokroy`,
+      `<em>Kano</em>, 2023. Pure wool, acrylic wool, plastic tubing, Variations of Fringed pure cotton thread totems, bull denim apron, bound and suspended sparsely on a 1.2 meter x 1.5 meter metal mesh grid. Installation image by Anthea Pokroy`,
+      `<em>Kano</em>, 2023. Pure wool, acrylic wool, plastic tubing, Variations of Fringed pure cotton thread totems, bull denim apron, bound and suspended sparsely on a 1.2 meter x 1.5 meter metal mesh grid. Installation image by Anthea Pokroy`,
     ],
     description: `Ditiro Mashigo’s textile installation titled Kano formed part of her exhibition titled <em>7.7.7.7 / X9 /  ‘Ma Zith iingqondo zethu, / Zimbonge uYehova; / Kuba iinceba zakhe, / Zimi ngonaphakade</em>, which took place at Keyes Art Mile in Johannesburg in 2023 as part of INCCA’s Art After Baby initiative . “Mashigo views her practice as a hybrid between fashion and art,” wrote Christa Dee about the body of work, “with the skills from each half creating a wonderfully vibrant middle ground. The exhibition resulting from the project Art After Baby, sees these two worlds meet for the first time in an exhibition format. This marks a significant moment in Mashigo’s career and evolution in her modes of making. Showcasing new fibre art and monotypes, this presentation articulates an accumulation of thematic references – a powerful female familial lineage, embracing domestic spaces, her ongoing spiritual journey and her Pedi culture.”`,
   },
@@ -48,14 +48,18 @@ const projects = [
       "/images/boemo-ba-leratadima.jpg",
       "/images/mesong.jpg",
     ],
-    captions: ["First image caption", "Second caption", "Third caption"],
+    captions: [
+      `<em>Lutombo (Blue)</em>, 2025. Fabric paint, wool & cotton threads and pastels on brown board, and denim`,
+      `<em>Boemo ba leratadima</em>, 2025. Fabric paint, wool & cotton threads and pastels on brown board, and denim`,
+      `<em>Mesong</em>, 2025. Fabric paint, wool & cotton threads and pastels on brown board, and denim`,
+    ],
     description:
-      "IZulu iKaya lami | The heavens are my home — a Zulu chorus — embodies the essence of this body of work. Created from a place of counter-seeing and feeling, it challenges the conventional notion of the sky as merely blue and home as a place outside the body.'This exploration stems from childhood memory, where I was enchanted by fairy tales of dames, damsels, and dragons and where I first experienced the feeling of being displaced, after relocating from Lebowakgomo to Pretoria. I recall needing to feel at home in a land foreign to me, the memory of finding solace in these stories sparked an understanding of how imagination shapes our world, leading me to retell them from an African perspective. I realign these tales with my version of beauty, my understanding of the divine, and the sources of my inspiration which are usually formless but are rather textured in language and color.",
+      `<em> IZulu iKaya lami | The heavens are my home — a Zulu chorus</em> was created from a place of counter-seeing and feeling, it challenges the conventional notion of the sky as merely blue and home as a place outside the body. "This exploration stems from childhood memory, where I was enchanted by fairy tales of dames, damsels, and dragons and where I first experienced the feeling of being displaced, after relocating from Lebowakgomo to Pretoria. I recall needing to feel at home in a land foreign to me, the memory of finding solace in these stories sparked an understanding of how imagination shapes our world, leading me to retell them from an African perspective. I realign these tales with my version of beauty, my understanding of the divine, and the sources of my inspiration which are usually formless but are rather textured in language and colour."`,
   },
   {
     id: 4,
-    title: "Ha ke le tje ke le mobe",
-    year: "2023",
+    title: "Monotypes",
+    year: "2023-ongoing",
     image: "/images/Ha_ke-blob.jpg",
     images: [
       "/images/Ha_ke_le_tje_ke_le_mobe_1.jpg",
@@ -69,7 +73,8 @@ const projects = [
       `<em>Ha ke le tje ke le mobe III</em>, 2023. Monotype with thread. 70 x 50 cm`,
       `<em>Ha ke le tje ke le mobe, I, II</em> and <em>III</em>. Installation view. Photograph by Anthea Pokroy`,
     ],
-    description: "",
+    description: `A series of monotype prints formed part of Ditiro Mashigo’s exhibition titled <em>7.7.7.7 / X9 /  ‘Ma Zith iingqondo zethu, / Zimbonge uYehova; / Kuba iinceba zakhe, / Zimi ngonaphakade</em>, which took place at Keyes Art Mile in Johannesburg in 2023 as part of INCCA’s Art After Baby initiative. These works, <a href="https://incca.org.za/Feature-Threaded-histories-and-spiritual-tactility" target="_blank" rel="noopener noreferrer">
+    writes Christa Dee</a>, “speak to the fragility of life and the permanence of mark-making. The addition of embroidery to her prints – thinking about the action of piercing the surface and moving thread through this opening – brings viewers’ attention to Mashigo’s reflections on the spiritual realm. Her works are often made while listening to praise music, channelling this sonic influence and her own long-term personal divine journey. The prints are also the result of her realisation over time that some of what she wants to create can also exist on flat surfaces like paper.”`,
   },
   {
     id: 5,
